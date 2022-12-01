@@ -240,9 +240,3 @@ const guardaStorage = () => localStorage.setItem("carrito", JSON.stringify(carri
 
 
 
-
-
-
-
-
-
