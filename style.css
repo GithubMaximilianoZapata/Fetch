@@ -145,6 +145,21 @@ section {
     display: none;
 }
 
+.contenedorPagos {
+    border: solid black;
+    width: 80%;
+    margin-top: 100px;
+}
+.tarjeta {
+    margin-bottom: 20px;
+}
+.inputNombre {
+    width: 300px;
+}
+#selTarj {
+    padding-right: 20px;
+}
+
 @media screen and (max-width: 768px) {
 
     h1 {
