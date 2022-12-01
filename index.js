@@ -237,6 +237,15 @@ const contarCarrito = ()=> {
  contarCarrito();
  pintarCarrito();
 const guardaStorage = () => localStorage.setItem("carrito", JSON.stringify(carrito));
-
+const pagar = document.getElementById("pagar");
+pagar.onclick = () => {    
+    Swal.fire('Compra finalizada con exito');
+    carrito = []; 
+    carrito = localStorage.clear();
+    modalCarrito.innerHTML = " ";
+    contadorCarrito.innerText = 0;
+    const total = document.getElementById("total-carrito")
+    total.innerText = 0;    
+};
 
 
