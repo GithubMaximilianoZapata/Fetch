@@ -102,7 +102,7 @@ function Alfajores(array){
         guardaStorage();
         Toastify({
             text: "Agregado al Carrito",            
-            duration: 2000,
+            duration: 1000,
             style: {
                 background: "rgb(63,94,251)",
                 background: "radial-gradient(circle, rgba(63,94,251,1) 4%, rgba(164,34,131,1) 85%)",                                
@@ -151,7 +151,7 @@ function Bombones(array){
         guardaStorage();
         Toastify({
             text: "Agregado al Carrito",            
-            duration: 2000,
+            duration: 300,
             style: {
                 background: "rgb(63,94,251)",
                 background: "radial-gradient(circle, rgba(63,94,251,1) 4%, rgba(164,34,131,1) 85%)",                                
@@ -196,7 +196,7 @@ const pintarCarrito = () => {
             eliminarArticulo();
             Toastify({
                 text: "Eliminado del Carrito",            
-                duration: 2000,
+                duration: 600,
                 style: {
                     background: "rgb(228,20,20);",
                     background: "linear-gradient(90deg, rgba(228,20,20,1) 100%, rgba(252,176,69,1) 100%)",                                
@@ -245,7 +245,7 @@ pagar.onclick = () => {
     modalCarrito.innerHTML = " ";
     contadorCarrito.innerText = 0;
     const total = document.getElementById("total-carrito")
-    total.innerText = 0;    
+    total.innerText = 0;      
 };
 
 
