@@ -144,32 +144,6 @@ section {
     position: absolute;
     display: none;
 }
-
-.contenedorPagos {    
-    width: 50%;
-    height: 70%;
-    margin-top: 80px;
-    margin-bottom: 60px;
-    border: solid black;
-    border-radius: 10px;
-}
-.tarjeta {
-    margin-bottom: 20px;
-}
-.inputNombre {
-    width: 300px;
-}
-.inputFecha {
-    width: 90px;
-    margin-right: 10px;
-}
-.inputCvv {
-    width: 80px;
-}
-#selTarj {
-    margin-right: 10px;
-}
-
 @media screen and (max-width: 768px) {
 
     h1 {
