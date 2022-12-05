@@ -187,6 +187,7 @@ const pintarCarrito = () => {
             console.log(articulo);
             articulo.cantidad = parseInt(inputCantidad.value)
             actualizarCarrito();
+            guardaStorage();
         };                            
         let eliminaProducto = document.createElement("span");
         eliminaProducto.innerText = "❌";
