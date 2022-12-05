@@ -6,7 +6,8 @@ const resetForm = document.getElementById("formulario");
     Swal.fire('Compra finalizada con exito');    
     carrito = [];
     carrito = localStorage.clear();
-    resetForm.reset();       
+    resetForm.reset();
+    total.innerText = 0;      
 };
 
 //MOSTRAR EL TOTAL DEL CARRITO A PAGAR
