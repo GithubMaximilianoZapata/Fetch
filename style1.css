@@ -28,7 +28,7 @@ body {
 .inputCvv {
     width: 80px;
 }
-#selTarj {
+.selTarj {
     margin-right: 10px;
 }
 .borde {
@@ -45,4 +45,9 @@ input[type="number"] {
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
+}
+.total-compra {
+    color: black;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

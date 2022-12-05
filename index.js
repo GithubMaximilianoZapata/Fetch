@@ -30,7 +30,7 @@ function Tortas(array){
             <h5 class="card-title">${torta.nombre}</h5>
             <p class="card-text">${torta.descripcion}</p>
             <p class="card-text">$ ${torta.precio} el kg</p>
-            <button type="button" class="btn btn-outline-dark tor" id="${torta.id}"><strong>Agregar al Carrito</strong></button>`
+            <button type="button" class="btn btn-outline-dark" id="${torta.id}"><strong>Agregar al Carrito</strong></button>`
             contenido.append(cuerpo);
             //AGREGAR AL CARRITO
             const agregaTortas = document.getElementById(`${torta.id}`);
@@ -196,7 +196,7 @@ const pintarCarrito = () => {
             eliminarArticulo();
             Toastify({
                 text: "Eliminado del Carrito",            
-                duration: 600,
+                duration: 1000,
                 style: {
                     background: "rgb(228,20,20);",
                     background: "linear-gradient(90deg, rgba(228,20,20,1) 100%, rgba(252,176,69,1) 100%)",                                
@@ -237,15 +237,9 @@ const contarCarrito = ()=> {
  contarCarrito();
  pintarCarrito();
 const guardaStorage = () => localStorage.setItem("carrito", JSON.stringify(carrito));
-const pagar = document.getElementById("pagar");
-pagar.onclick = () => {    
-    Swal.fire('Compra finalizada con exito');
-    carrito = []; 
-    carrito = localStorage.clear();
-    modalCarrito.innerHTML = " ";
-    contadorCarrito.innerText = 0;
-    const total = document.getElementById("total-carrito")
-    total.innerText = 0;      
+//PAGO DE LA COMPRA
+const pagar = document.getElementById("irPagar");
+pagar.onclick = ()=>{
+    Swal.fire('Compra finalizada con exito'); 
 };
-
 

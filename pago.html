@@ -30,15 +30,18 @@
       </nav>
 </header>
 <body>
-    <form class="container-fluid contenedorPagos">
+    <form class="container-fluid contenedorPagos" id="formulario">
         <div class="">
             <h3 class="text-center">FINALIZAR COMPRA</h3>
         </div>
         <div class="d-flex justify-content-center tarjeta">
             <img src="./img/pagos-pcom.png" alt="Tarjetas de pago" class="borde">
         </div>
+        <div>
+            <p class="total-compra text-center">Total de tu compra: $<span id="total-compra">0</span></p>
+        </div>
         <div class="d-flex justify-content-center tarjeta">
-            <select name="texto" id="selTarj" class="borde" atribute="required">
+            <select name="texto"  class="borde selTarj">
                 <option value="texto">Tarjeta de Débito</option>
                 <option value="texto">Tarjeta de Credito</option>
             </select>            
@@ -50,28 +53,29 @@
             </select>
         </div>        
         <div class="d-flex justify-content-center tarjeta">
-            <input type="number" placeholder="Ingresa el numero de tu tarjeta" class="inputNombre borde1" atribute="required">
+            <input type="number" placeholder="Ingresa el numero de tu tarjeta" class="inputNombre borde1">
         </div>
         <div class="d-flex justify-content-center tarjeta">
-            <input type="number" placeholder="Mes Vto" class="inputTarjeta inputFecha borde1" atribute="required">
-            <input type="number" placeholder="Año Vto" class="inputTarjeta inputFecha borde1" atribute="required">
+            <input type="number" placeholder="Mes Vto" class="inputTarjeta inputFecha borde1">
+            <input type="number" placeholder="Año Vto" class="inputTarjeta inputFecha borde1">
         </div>        
         <div class="d-flex justify-content-center tarjeta">
-            <input type="text" placeholder="Nombre del Titular" class="inputTarjeta inputNombre borde1" atribute="required">
+            <input type="text" placeholder="Nombre del Titular" class="inputTarjeta inputNombre borde1">
         </div>   
         <div class="d-flex justify-content-center tarjeta">
-            <input type="number" placeholder="DNI del Titular sin puntos" class="inputTarjeta inputNombre borde1" atribute="required">
+            <input type="number" placeholder="DNI del Titular sin puntos" class="inputTarjeta inputNombre borde1">
         </div>
         <div class="d-flex justify-content-center tarjeta">
-            <input type="password" placeholder="Cvv" class="inputTarjeta inputCvv borde1" atribute="required">
+            <input type="password" placeholder="Cvv" class="inputTarjeta inputCvv borde1" maxlength="3">
         </div>
         <div class="d-flex justify-content-center tarjeta">
-            <button type="button" class="btn btn-dark" id="pagar">PAGAR</button>
+            <input type="button" class="btn btn-dark" id="pagar" value= "PAGAR">
         </div>           
     </form>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.all.min.js"></script> 
     <script src="./pagos.js"></script>
+    <script src="./index.js"></script>        
 </body>
 </html>
