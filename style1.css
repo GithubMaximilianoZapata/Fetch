@@ -39,15 +39,40 @@ body {
     border: solid black;
     border-radius: 4px;
 }
+.total-compra {
+    color: black;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media screen and (max-width: 768px) {
+    
+    .contenedorPagos {    
+        width: 100%;
+        height: 100%;
+        margin-top: 80px;
+        margin-bottom: 60px;        
+    }
+    .tarjeta {
+        margin-bottom: 20px;    
+    }
+    .inputNombre {
+        width: 350px;
+    }
+    .inputFecha {
+        width: 90px;
+        margin-right: 10px;
+    }
+    .inputCvv {
+        width: 80px;
+    }
+    .selTarj {
+        margin-right: 10px;
+    }
+};
 input[type="number"] {
     -moz-appearance: textfield;
 }
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-}
-.total-compra {
-    color: black;
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+};

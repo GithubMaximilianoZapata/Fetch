@@ -9,7 +9,6 @@ const resetForm = document.getElementById("formulario");
     resetForm.reset();
     total.innerText = 0;      
 };
-
 //MOSTRAR EL TOTAL DEL CARRITO A PAGAR
 const total = document.getElementById('total-compra');
 total.innerText = carrito.reduce((acc, el) => acc + (el.precio * el.cantidad), 0); 
